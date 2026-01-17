@@ -115,7 +115,22 @@ nav {
     height: 180px;
     border-radius: 50%;
 }
-
+/* Easy Fitness section */
+.easy-fitness {
+    border-radius: 18px;
+    background-color: #222222;
+    padding: 1.87rem 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3.12rem;
+}
+.easy-image img {
+    width: 366px;
+    border-radius: 18px;
+}
+.easy-descripton {
+    margin-bottom: 2.12rem;
+}
 /* small device responsive  */
 @media screen and (max-width: 576px) {
   nav {
@@ -128,7 +143,8 @@ nav {
     display: block;
   }
   .banner-section,
-  .habit-image-box {
+  .habit-image-box,
+  .easy-fitness {
     flex-direction: column;
     gap: 40px;
   }
@@ -163,5 +179,8 @@ nav {
   .habit-image-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .easy-fitness {
+    gap: 68px;
   }
 }
