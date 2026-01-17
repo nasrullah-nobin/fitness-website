@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --section-heading: 3rem;
+    --description: 0.87rem;
+    --light-gray: rgba(255, 255, 255, 0.5);
+    --white: #FFFFFF;
+}
+
+/* shared styles  */
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn {
+    background-color: #E6533C;
+    color: #FFFFFF;
+    font-size: 1.12rem;
+    font-weight: 600;
+    padding: 1rem 4.46rem;
+    border-radius: 2.62rem;
+}
+
+/* nav related style  */
+header {
+    background: linear-gradient(#111111 , #77777700);
+    padding: 3.56rem 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-title {
+    color: #E6533C;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.nav-menu {
+    display: flex;
+    gap: 2.93rem;
+    list-style: none;
+}
+.nav-btn {
+    padding: 0.5rem 1.25rem;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.13rem;
+}
+.hamburger {
+display: none;
+}
+
+
+/* small device responsive  */
+@media screen and (max-width: 576px) {
+    nav {
+        justify-content: center;
+    }
+    .nav-link {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* responsive for medium device */
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+     header {
+        padding: 20px;
+    }
+}
