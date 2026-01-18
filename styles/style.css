@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Inter", sans-serif;
+  background-color: rgb(0, 0, 0);
 }
 :root {
   --section-heading: 3rem;
@@ -14,9 +15,6 @@ body {
 }
 
 /* shared styles  */
-main {
-    background-color: rgb(0, 0, 0);
-}
 .container {
   max-width: 1060px;
   margin: 0 auto;
@@ -98,39 +96,122 @@ nav {
 }
 /* Change Your Habits section style  */
 .your-habits {
-    padding-top: 6.25rem;
+  padding-top: 6.25rem;
 }
 .habit-image-box {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
 }
 .habit-title {
-    color: var(--white);
-    font-size: 1.12rem;
-    margin-bottom: 6px;
+  color: var(--white);
+  font-size: 1.12rem;
+  margin-bottom: 6px;
 }
 .habit-image img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
 }
 /* Easy Fitness section */
 .easy-fitness {
-    border-radius: 18px;
-    background-color: #222222;
-    padding: 1.87rem 2rem;
-    display: flex;
-    align-items: center;
-    margin-top: 3.12rem;
+  border-radius: 18px;
+  background-color: #222222;
+  padding: 1.87rem 2rem;
+  display: flex;
+  gap: 10.31rem;
+  align-items: center;
+  margin-top: 3.12rem;
 }
 .easy-image img {
-    width: 366px;
-    border-radius: 18px;
+  width: 100%;
+  border-radius: 18px;
 }
-.easy-descripton {
-    margin-bottom: 2.12rem;
+.easy-description {
+  margin-bottom: 2.12rem;
 }
+/* Trainings and Exercises related style */
+/* .trainings-section {
+    text-align: left;
+    margin-top: 6.25rem;
+}
+.trainings-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 520px 250px;
+} */
+
+/* meat our team section related style  */
+.our-team {
+  margin-top: 6.25rem;
+}
+.team-image-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: hsl(0, 0%, 10%);
+  border-radius: 18px;
+  gap: 20px;
+  padding: 20px;
+}
+.team-image img {
+  width: 326px;
+  height: 272px;
+  object-fit: cover;
+  /* width: 100%; */
+  border-radius: 18px;
+  /* object-fit: cover; */
+}
+.team-image {
+  position: relative;
+}
+.image-title {
+  position: absolute;
+  bottom: 100px;
+}
+/* footer related styles  */
+footer {
+  margin-top: 5.5rem;
+  background-color: hsl(0, 0%, 10%);
+}
+.footer-container {
+  display: flex;
+  padding-top: 4.12rem;
+  gap: 9.5rem;
+}
+.footer-title {
+  font-size: 4.37rem;
+  font-weight: 800;
+  color: #e6533c;
+  margin-bottom: 1.25rem;
+}
+.About-title {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 2.43rem;
+}
+.About-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.about-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.copyright {
+  padding-bottom: 2.18rem;
+}
+.copyright hr {
+  color: rgba(255, 255, 255, 0.1);
+  margin-top: 4.87rem;
+  margin-bottom: 2.25rem;
+}
+.copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+}
+
 /* small device responsive  */
 @media screen and (max-width: 576px) {
   nav {
@@ -144,7 +225,8 @@ nav {
   }
   .banner-section,
   .habit-image-box,
-  .easy-fitness {
+  .easy-fitness,
+  .footer-container {
     flex-direction: column;
     gap: 40px;
   }
@@ -155,6 +237,9 @@ nav {
     display: flex;
     gap: 14px;
   }
+  .team-image-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* responsive for medium device */
@@ -162,7 +247,8 @@ nav {
   header {
     padding: 20px;
   }
-  .banner-section {
+  .banner-section,
+  .footer-container {
     flex-wrap: wrap;
     gap: 40px;
     padding-left: 20px;
@@ -182,5 +268,8 @@ nav {
   }
   .easy-fitness {
     gap: 68px;
+  }
+  .team-image img {
+    width: 100%;
   }
 }
