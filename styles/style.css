@@ -376,22 +376,24 @@ footer {
   }
   .trainings-box {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     /* grid-template-rows: repeat(1, 225px); */
   }
-  .trainings-card-2 {
-    grid-column: span 1;
+  .trainings-card-1,
+  .trainings-card-3 {
+    grid-column: span 2;
   }
-  .trainings-card-3,
+  /* .trainings-card-3,
   .trainings-card-4 {
     display: none;
-  }
+  } */
   .team-image-box {
     grid-template-columns: repeat(1, 1fr);
   }
   .team-image img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
   }
 }
 
