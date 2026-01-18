@@ -13,6 +13,14 @@ body {
   --light-gray: rgba(255, 255, 255, 0.5);
   --white: #ffffff;
 }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 77, 77, 0);
+  }
+}
 
 /* shared styles  */
 .container {
@@ -33,17 +41,17 @@ body {
 }
 .btn:hover {
   background: transparent;
-   border: 1px solid #e6533c;
-  color: #E6533C;
+  border: 1px solid #e6533c;
+  color: #e6533c;
 }
 .trans-btn {
   background-color: transparent;
   border: 1px solid #e6533c;
-  color: #E6533C;
+  color: #e6533c;
   transition: 0.3s;
 }
 .trans-btn:hover {
-  background-color:  #e6533c;
+  background-color: #e6533c;
   color: white;
 }
 .section-title {
@@ -86,8 +94,8 @@ nav {
 }
 .nav-btn:hover {
   background: transparent;
-   border: 1px solid #e6533c;
-  color: #E6533C;
+  border: 1px solid #e6533c;
+  color: #e6533c;
 }
 .nav-link {
   text-decoration: none;
@@ -97,7 +105,7 @@ nav {
 }
 .nav-link:hover {
   border: 1px solid #e6533c;
-  color: #E6533C;
+  color: #e6533c;
   font-size: 1.12rem;
   font-weight: 600;
   padding: 0.5rem 1.25rem;
@@ -160,10 +168,11 @@ nav {
   right: 16rem;
 }
 .ball {
+  animation: pulse 1.5s infinite;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: #E6533C;
+  background-color: #e6533c;
 }
 .tooltip-2-heading {
   /* margin-bottom: 0.5rem; */
@@ -215,13 +224,13 @@ nav {
 }
 /* Trainings and Exercises related style */
 .trainings-section {
-    text-align: left;
-    margin-top: 6.25rem;
+  text-align: left;
+  margin-top: 6.25rem;
 }
 .trainings-box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(1, 225px); */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(1, 225px); */
 }
 .trainings-box img {
   width: 100%;
@@ -369,14 +378,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     /* grid-template-rows: repeat(1, 225px); */
-}
-.trainings-card-2 {
-  grid-column: span 1;
-}
-.trainings-card-3,
-.trainings-card-4 {
-  display: none;
-}
+  }
+  .trainings-card-2 {
+    grid-column: span 1;
+  }
+  .trainings-card-3,
+  .trainings-card-4 {
+    display: none;
+  }
   .team-image-box {
     grid-template-columns: repeat(1, 1fr);
   }
